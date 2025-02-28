@@ -1,2 +1,2 @@
-# DataScienceBootcamp
- Michael Tirone's Data Science Bootcamp
+# datasciencebootcamp
+Michael Tirone Data Science Bootcamp Files
