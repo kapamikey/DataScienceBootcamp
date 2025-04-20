@@ -1,0 +1,20 @@
+How do you assess the statistical significance of an insight?
+You start by framing a null hypothesis— the idea that there’s no real effect or difference—and then calculate how likely your observed data would be if that hypothesis were true. That likelihood is your p‑value. If the p‑value is below a threshold you set ahead of time (commonly 0.05), you say the result is “statistically significant,” meaning it’s unlikely to have popped up just by random chance. It’s a way of guarding against false alarms, but remember: a low p‑value doesn’t measure how big or important the effect is, just how surprising it would be under the assumption that it has no effect
+
+What is the Central Limit Theorem? Explain it. Why is it important?
+The Central Limit Theorem (CLT) is this idea that if you take a bunch of independent samples from any population (doesn’t matter if the original data are skewed or bumpy), the distribution of their means will tend to look like a normal distribution—assuming your sample size is big enough. The CLT uses the math of the normal distribution to make confidence intervals and hypothesis tests even when we don’t know much about the original pop. In practice, it’s the reason so many statistical tools work under quite general conditions.
+
+What is statistical power?
+Statistical power is basically the test’s ability to spot a real effect when it’s actually there. It’s the probability you’ll reject the null hypothesis given that the alternative hypothesis is true. If power is 0.8, you have an 80% chance of detecting an effect of a certain size with your chosen sample size and significance level. Low power means you risk missing real effects (false negatives), so you often tweak sample size, effect size expectations, or error thresholds to boost power.
+
+How do you control for biases?
+Bias happens when s your data collection or analysis is not true - garbage in, garbage out. You tackle it by planning ahead: randomize subjects into groups so that known and unknown factors balance out, blind participants or analysts to conditions so expectations don’t color measurements, and standardize procedures to keep everything consistent. In observational studies, you might use matching, stratification, or statistical adjustments (like regression controls) to even out group differences and isolate the effect you really care about.
+
+What are confounding variables?
+I think of confounders as variables that influence both the thing you’re studying (the independent variable) and the outcome (the dependent variable), making it look like there’s a direct connection when actually it’s being driven by something else. For example, ice‑cream sales and drowning rates both rise in summer—you might wrongly link them unless you recognize “hot weather” as the confounder. You handle confounders by design (randomization, blocking) or statistically (regression adjustment, stratified analysis).
+
+What is A/B testing?
+A/B testing is like throwing two versions of something—I am a product manager and we use A/B testing to look at, for example, a webpage layout “A” and an alternate “B”—and how each affects a number of results (click‑throughs, sign‑ups, page-time etc.). After we randomly split an audience so each person only sees one version, then compare outcomes with the same stats tricks you’d use elsewhere: measure differences, calculate p‑values or confidence intervals, and decide if one version truly outperforms the other or if you’re just seeing noise.
+
+What are confidence intervals?
+A confidence interval gives you a range of values within which you believe the true population parameter (like a mean or a proportion) lies, with a certain level of “confidence” (often 95%). It’s a way of saying, “Based on my data, I’m pretty sure the real value is between X and Y.” Unlike a single-point estimate, the interval shows you the uncertainty around your estimate—narrow intervals mean you’re pretty precise, while wide ones mean there’s more wiggle room.
